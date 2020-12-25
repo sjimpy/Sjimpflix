@@ -1,0 +1,205 @@
+*, html{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body{
+  background-color: #171717;
+}
+h1, h2, h3, h4, p, a, button, form{
+  color: white;
+}
+
+h1{
+  font-size: 2em;
+}
+h2{
+  font-size: 1.9em;
+  padding-top: 2em;
+}
+
+p{
+  font-size: 1.1em;
+  padding-top: 1em;
+}
+
+nav{
+  background-color: #131313;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+nav ul a{
+  flex-grow: 1;
+  text-align: center;
+  list-style-type: none;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1.2em;
+}
+nav ul .active{
+  color: #E50914;
+}
+header h1{
+  text-align: center;
+  padding: 3em 0;
+  background-color: rgba(0, 0, 0, .6);
+}
+header section{
+  background-size: cover;
+  background-position: center center;
+}
+main{
+  margin: 0 2em;
+  text-align: center;
+}
+main section{
+  margin-top: 1em;
+}
+
+footer{
+  margin-top: 8em;
+  background-color: #131313;
+  bottom: 0;
+  width: 100%;
+}
+footer p{
+  text-align: center;
+  padding: 1em;
+  color: #2e2e2e;
+  font-size: 1em;
+}
+button {
+  margin-top: 1.5em;
+  padding: .8em 1.5em;
+  background-color: #E50914;
+  text-decoration: none;
+  font-size: 1.2em;
+  border: none;
+}
+button:focus {
+  border: none;
+  outline: none;
+}
+
+/* bron: https://www.thestage.co.uk/news/2018/demand-arts-tv-service-launches-netflix-arts-lovers/?login_to=https%3A%2F%2Fwww.thestage.co.uk%2Faccounts%2Fusers%2Fsign_up.popup */
+#homepage header section{
+  background-image: url("../assets/homebg.jpg");
+}
+
+
+
+#seriepage a{
+  text-decoration: none;
+}
+#seriepage section{
+  border-bottom: 2em solid white;
+  background-size: cover;
+  background-position: center top;
+}
+#seriepage h2{
+  text-transform: uppercase;
+  font-size: 1.3em;
+  background-color: rgba(0, 0, 0, .4);
+  padding: 6em 0 0em 0;
+  line-height: .65em;
+}
+
+/* bron: https://www.superguide.nl/nieuws/wiki-time-9-dingen-die-je-nog-niet-wist-over-la-casa-de-papel */
+#lacasadepapel{
+  background-image: url("../assets/casa.jpg");
+}
+
+/* bron: https://www.tokkoro.com/2636221-lucifer.html */
+#lucifer{
+  background-image: url("../assets/lucifer.jpg");
+}
+
+/* bron: https://www.nme.com/news/tv/creator-breaking-bad-desperately-trying-reunite-walter-w-2348748 */
+#breakingbad{
+  background-image: url("../assets/bad.jpg");
+}
+
+/* bron: https://www.dccomics.com/blog/2019/04/25/the-cast-of-gotham-says-goodbye */
+#gotham{
+  background-image: url("../assets/gotham.jpg");
+}
+/* bron: http://www.bureaudaadwerk.nl/contact */
+#contact{
+  background-image: url("../assets/contact.jpg");
+}
+
+#details section:nth-child(3) h2{
+  padding: 3header h1em 0 1em 0;
+}
+#details iframe{
+  position: relative;
+  margin-top: 10px;
+  width: 90vw;
+  height:51vw;
+  padding: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#rating ul {
+  display: flex;
+  justify-content: center;
+}
+#rating li {
+  padding: 0 .2em;
+  list-style-type: none;
+}
+#rating li:before {
+  content: "\2605";
+  color: #ffea00;
+  font-size:1em;
+  list-style-type: none;
+}
+#rating .nostar:before  {
+  content: "\2606";
+  color: #706700;
+  font-size:1em;
+  list-style-type: none;
+}
+#rating h2{
+  font-size: 1em;
+  color: #ffea00;
+  font-weight: normal;
+  padding: 0 0 .5em 0;
+}
+
+form{
+  font-size: 1em;
+  text-align: left;
+}
+form h3{
+  font-size: 1em;
+  margin: 0 5% .5em 5%;
+}
+form input, form textarea{
+  font-size: 1.5em;
+  width: 90%;
+  margin: 0 5% 1em 5%;
+  line-height: 1.5em;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+}
+form input:last-child{
+  background-color: red;
+  width: 50%;
+  margin: 1em 5%;
+  padding: .6em 0;
+}
+form input:last-child:focus{
+  border: none;
+  outline: none;
+}
+
+form input:focus, form textarea:focus{
+  border: 1px solid white;
+  outline: none;
+}
